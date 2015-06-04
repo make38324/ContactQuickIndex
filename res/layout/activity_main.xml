@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_weight="6" >
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+          >
+        </ListView>
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:text="还没有联系人" />
+          <TextView
+            android:id="@+id/tv_checked"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="44sp"
+            android:background="@android:color/darker_gray"
+            android:textColor="#0000ff"
+            android:text="A" />
+    </FrameLayout>
+
+    <com.czm.view.QuickIndexView
+        android:id="@+id/qiv_contact"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </com.czm.view.QuickIndexView>
+
+</LinearLayout>
